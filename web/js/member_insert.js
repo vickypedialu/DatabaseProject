@@ -1,0 +1,22 @@
+$(function(){
+    $("#insertForm").validate({
+        debug:true,
+        submitHandler:function(form){
+            form.submit();
+        },
+        rules:{
+            mid:{
+                required:true
+            },
+            name:{
+                required:true
+            },
+            EntryYear:{
+                required:true
+            },
+            Phone:{
+                required:true
+            }
+        }
+    })
+});
